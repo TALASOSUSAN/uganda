@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <title>TOUR by Talaso</title>
+</head>
+
+<body>
+
+    <!--main section-->
+    <section class="sec1" id="home">
+    <i class="fa fa-arrow-up" aria-hidden="true" onclick="scrollToTop();"></i>  
+        <div class="bg">
+            <div class="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#work">works</a></li>
+                    <li><a href="#testimonials">testimonials</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav">
+           
+            <div class="navBar">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                       
+            </div>
+            <div class="menu">
+            </div>
+        </div>
+        <div class="context">
+            <h2>Luxury is a state of mind</h2>
+            <h1>Welcome</h1>
+        
+        </div>
+    </section>
+    <!--!main section-->
+
+
+    <!--about us section-->
+    <section class="sec2" id="about">
+        <h2 class="head">About Us</h2>
+        <div class="container">
+            <div class="content one" data-aos="fade-right" data-aos-offset="350" data-aos-duration="1000">
+              
+                <p>The history of Mount Kenya Safari club: William Holden spent much 
+                  of his time working for wildlife conservation as a managing partner 
+                  in an animal preserve in Africa. His Mount Kenya Safari Club in Nanyuki 
+                  (founded 1959) became a mecca for the international jet set.On a trip to Africa, 
+                  he fell in love with the wildlife and became increasingly concerned with the animal 
+                  species that were beginning to decrease in population. With the help of his partners, 
+                  he created the Mount Kenya Game Ranch and inspired the creation of the William Holden 
+                  Wildlife Foundation.The Mount Kenya Game Ranch works to assist in Kenya with the wildlife 
+                  education of its youth.Within the Mount Kenya Game Ranch, is the Mount Kenya Conservancy which
+                   runs an animal orphanage as well as the Bongo Rehabilitation Program in collaboration with the 
+                   Kenya Wildlife Service. The orphanage provides shelter and care for orphans, injured and neglected
+                    animals found in the wild, with the aim of releasing these animals back into the wild whenever possible. 
+                    The conservancy is home to the critically endangered East African mountain bongo, and aims to prevent its
+                     extinction by breeding.!</p>
+                <p></p>
+            </div>
+            <div class="image1 one" data-aos="fade-left" data-aos-offset="350" data-aos-duration="1000">
+                <img src="https://www.micato.com/wp-content/uploads/2018/09/fairmont-mount-kenya-safari-club-1-3-2.jpg">
+            </div>
+        </div>
+    </section>
+    <!--!about us section-->
+
+   
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+        var menu = document.querySelector('.menu');
+        var bg = document.querySelector('.bg');
+
+        menu.addEventListener('click',function(){
+            bg.classList.toggle('active');
+            menu.classList.toggle('active');
+        })
+    </script>
+    <script>
+        var nav = document.querySelector('.nav');
+        window.addEventListener('scroll',function(){
+            nav.classList.toggle('sticky',window.scrollY>0);
+        })
+    </script>
+    <script>
+        window.addEventListener('scroll',function(){
+            var scroll = document.querySelector('.fa');
+            scroll.classList.toggle("active",window.scrollY>500)
+        })
+        function scrollToTop(){
+            window.scrollTo({
+                top:0,
+                behavior:'smooth'
+            })
+        }
+    </script>
+
+
+</body></html>
